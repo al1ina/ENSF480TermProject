@@ -14,7 +14,7 @@ public class Reservation {
         this.price = price;
     }
     public void confirm() {
-
+        
     }
     public void cancel() {
 
@@ -23,11 +23,7 @@ public class Reservation {
 
     }
     public void generateConfirmation() {
-        if (status){
-            System.out.print("Reservation is confirmed. Reservation ID: ");
-            System.out.print(this.reservationId);
-        }
-        else System.out.println("Reservation could not be confirmed.");
+        
     }
 
 }
