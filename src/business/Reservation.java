@@ -2,6 +2,7 @@ package src.business;
 import java.time.LocalDate;
 
 public class Reservation {
+    //subject to add or remove an observer object
     private int reservationId;
     private LocalDate reservationDate;
     private boolean status;
