@@ -1,7 +1,7 @@
 package src.business;
 import java.time.LocalDate;
 
-public class Reservation {
+public class Reservation implements ReservationSubject{
     //subject to add or remove an observer object
     private int reservationId;
     private LocalDate reservationDate;
@@ -18,7 +18,7 @@ public class Reservation {
         
     }
     public void cancel() {
-
+        
     }
     public void modify() {
 
