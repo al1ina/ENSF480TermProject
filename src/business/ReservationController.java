@@ -1,14 +1,13 @@
 package src.business;
 import java.util.*;
 
-public class ReservationController implements ReservationObserver{
+public class ReservationController{
     //manage observers and helps to make, cancel, and modify reservations
     private List<ReservationObserver> observers = new ArrayList<>();
 
     public void addObserver(ReservationObserver observer){
         observers.add(observer);
     }
-    @Override 
     public void notifyObservers(String message, Reservation reservation){
         for (ReservationObserver observer : observers){
             observer.update(message, reservation);
